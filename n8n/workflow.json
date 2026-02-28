@@ -1,0 +1,38 @@
+{
+  "nodes": [
+    {
+      "parameters": {
+        "cronExpression": "0 */1 * * *"
+      },
+      "name": "Hourly Trigger",
+      "type": "n8n-nodes-base.cron",
+      "typeVersion": 1,
+      "position": [200, 300]
+    },
+    {
+      "parameters": {
+        "url": "http://localhost:8000/api/run-agents",
+        "method": "POST",
+        "jsonParameters": true,
+        "bodyParametersJson": "{\"jobs\": []}"
+      },
+      "name": "Run AI Agents",
+      "type": "n8n-nodes-base.httpRequest",
+      "typeVersion": 1,
+      "position": [450, 300]
+    }
+  ],
+  "connections": {
+    "Hourly Trigger": {
+      "main": [
+        [
+          {
+            "node": "Run AI Agents",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    }
+  }
+}

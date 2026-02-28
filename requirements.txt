@@ -1,0 +1,50 @@
+<<<<<<< HEAD
+# FastAPI Backend
+fastapi
+uvicorn[standard]
+python-multipart
+python-jose[cryptography]
+passlib[bcrypt]
+python-dotenv
+gunicorn
+
+# Database
+sqlalchemy
+psycopg2-binary
+alembic
+
+# LangChain & LangGraph
+langchain
+langchain-openai
+langgraph
+langchain-community
+
+# Vector Store
+chromadb
+
+# Web Scraping
+beautifulsoup4
+requests
+feedparser
+
+# Frontend
+streamlit
+
+# Utilities
+pydantic>=2.6.0
+pydantic-settings
+httpx
+=======
+fastapi
+uvicorn
+sqlalchemy
+psycopg2-binary
+python-dotenv
+langchain
+langgraph
+openai
+chromadb
+playwright
+streamlit
+pyjwt
+>>>>>>> 65e52cf1c6d95a55f86841050ddc5f9f1b34c086
